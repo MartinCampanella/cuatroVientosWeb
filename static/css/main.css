@@ -25,3 +25,7 @@ body {
     padding: 35px;
     background: #ddd;
 }
+
+.cabana-image {
+    border-radius: 10%;
+}
