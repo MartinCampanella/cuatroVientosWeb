@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link" href="#carousel">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#servicios">Servicios</a>
@@ -36,10 +36,7 @@
                   <a class="nav-link" href="#cabanas">Cabañas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Consultar Disponibilidad</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -154,7 +151,7 @@
 
     <!--CABAÑAS-->
 
-    <section id="cabanas">
+    <section id="cabanas" style="padding-bottom: 40px;">
         <div class="container-fluid mt-5">
             <h2 style="padding-top: 10px;text-align: center;">Nuestras cabañas</h2>
             <hr>
@@ -213,45 +210,49 @@
 
 <!--CONSULTA DISPONIBILIDAD-->
 
-    <section id="disponibilidad">
-        <div class="container">
-            <div class="row">
-
-            </div>
-        </div>        
-    </section>
-
-
-    <!--Contacto y localizacion-->
-<!--    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12 width-set-50">
-                    <div class="footer-details">
-                        <h4>Contacto</h4>
-                        <ul class="list-unstyled footer-contact-list">
-                            <li style="display: inline-block;">
-                                <i class="fas fa-map-marker fa-lg"></i>
-                                <p><a href="https://www.google.com/maps?ll=-31.799433,-64.979810"> Cordoba - Nono - Cuatro Vientos</a></p>
-                            </li>
-                            <li style="display: inline-block;">
-                                <i class="fas fa-phone fa-lg"></i>
-                                <p><a href="https://api.whatsapp.com/send?phone=5491165714841"> (011)15.6571-4841</a></p>
-                            </li>
-                            <li style="display: inline-block;">
-                                <i class="fas fa-envelope-o fa-lg"></i>
-                                <p><a href="mailto:cuatrovientosnono@gmail.com"> cuatrovientosnono@gmail.com</a></p>
-                            </li>
-                        </ul>
-                        <div class="footer-social-icon">
-                            <a href="#"><i class="fas fa-facebook"></i></a>
+    <footer id="contacto">
+        <div class="container-fluid">
+            <div class="row pt-5 ml-5 mr-5 pb-5">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <h4 style="color: white;">Contacto</h4>
+                    <div class="container mt-3">
+                        <div class="row">
+                            <div class="col-md-1 col-sm-1 col-xs-1">
+                                <i style="color: white;" class="fas fa-map-marker-alt fa-lg"></i>
+                            </div>
+                            <div class="col-md-11 col-sm-11 col-xs-11">
+                                <p style="color: white;"><a href="https://www.google.com/maps?ll=-31.799433,-64.979810"> Cordoba - Nono - Cuatro Vientos</a></p>    
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1 col-sm-1 col-xs-1">
+                                <i style="color: white;" class="fab fa-whatsapp fa-lg"></i>
+                            </div>
+                            <div class="col-md-11 col-sm-11 col-xs-11">
+                                <p style="color: white;"><a href="https://api.whatsapp.com/send?phone=5491165714841"> (011)15.6571-4841</a></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1 col-sm-1 col-xs-1">
+                                <i style="color: white;" class="far fa-envelope fa-lg"></i>
+                            </div>
+                            <div class="col-md-11 col-sm-11 col-xs-11">
+                                <p style="color: white;"><a href="mailto:cuatrovientosnono@gmail.com"> cuatrovientosnono@gmail.com</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-9 col-sm-9 col-xs-12">
+                    <h4 style="color: white;">¿Como llegar?</h4>
+                    <p style="color: white;">Nos encontramos camino al Museo Rocsen por la avenida "Los porteños", pasando el "balneario los remansos" en la primera bifuracion doblar a la derecha, y a 50m a su izquierda se encuentra la entrada.</p>
+                    <a data-toggle="modal" data-target="#como-llegar-modal">    
+                        <img src="static/img/comollegar.jpg" style="width: 100%;">
+                    </a>
+                    <p style="color: white;">Coordenadas: -31.799433,-64.979810</p>
+                </div>
             </div>
-        </div>
+        </div>        
     </footer>
--->
 
     <!-- MODALS -->
         <!--CABAÑA 1 PRINCIPAL-->
@@ -295,6 +296,16 @@
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                 </div>
               </div>
+            </div>
+        </div>
+
+        <!--COMO LLEGAR-->
+        <div class="modal fade" id="como-llegar-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <img src="static/img/comollegar.jpg" class="img-fluid rounded">
             </div>
         </div>
 
@@ -372,10 +383,17 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <!-- SCRIPTS 
+    <!-- SCRIPTS -->
     <script>
-        window.sr = ScrollReveal();
-            sr.reveal('navbar')
-    </script>-->
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+    });
+    </script>
 </body>
 </html>
