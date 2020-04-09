@@ -31,7 +31,8 @@ body {
 }
 
 .carousel,
-.carousel-inner {
+.carousel-inner,
+.carousel-indicators {
     height: 80vh;
     width: 100vw;
 }
