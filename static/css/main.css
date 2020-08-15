@@ -42,3 +42,8 @@ body {
     height: 80%;
     margin: auto;
 }
+
+.btn{
+    color: black;
+    background-color: #f1f1f1;
+}
