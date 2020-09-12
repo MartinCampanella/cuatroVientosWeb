@@ -103,7 +103,7 @@
                     <button class="btn btn-lg btn-info" data-toggle="modal" data-target="#predio-fotos-modal">Ver Imagenes Predio</button>
                 </div>
                 <div class="col-md-6 col-sm-6 col-12 text-center">
-                    <button class="btn btn-lg btn-info" data-toggle="modal" data-target="#cabana-2-fotos-modal">Ver Imagenes Balnearios</button>
+                    <button class="btn btn-lg btn-info" data-toggle="modal" data-target="#rio-fotos-modal">Ver Imagenes Balnearios</button>
                 </div>
             </div>
         </div>
@@ -392,6 +392,29 @@
             </div>
         </div>
 
+        <!-- RIO FOTOS -->
+        <div class="modal fade" id="rio-fotos-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="overflow-y: scroll;">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Galeria de fotos Balnearios</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="card-columns" id="galeria-rio">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
         <!-- SCRIPTS MODALS -->
         <script>
             var imagenes = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17];
@@ -456,6 +479,29 @@
                                             </button>
                                             <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
                                                 <img src="static/img/predio/${imagen}.jpg" class="img-fluid rounded">
+                                            </div>
+                                        </div>
+            `
+            }
+        </script>
+
+                <script>
+            var imagenes = [1,2,3,4,5,6,7,8];
+            var galeria = document.getElementById('galeria-rio');
+
+            for(imagen of imagenes){
+                galeria.innerHTML += `  <div class="card"> 
+                                            <a data-toggle="modal" data-target="#rio-foto-${imagen}-modal">
+                                                <img src="static/img/rio/${imagen}.jpg" class="card-img-top">
+                                            </a>
+                                        </div>
+
+                                        <div class="modal fade" id="rio-foto-${imagen}-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                                                <img src="static/img/rio/${imagen}.jpg" class="img-fluid rounded">
                                             </div>
                                         </div>
             `
