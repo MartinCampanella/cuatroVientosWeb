@@ -24,6 +24,8 @@
         gtag('config', 'UA-163331244-1');
     </script>
 
+    <link rel="shortcut icon" type="image/x-icon" href="static/img/favicon.ico"/>
+
 </head>
 <body>
     
@@ -40,7 +42,7 @@
                   <a class="nav-link" href="#carousel">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#descripcion">Lugar</a>
+                  <a class="nav-link" href="#descripcion">Complejo</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#servicios">Servicios</a>
@@ -63,16 +65,24 @@
           <li data-target="#carousel" data-slide-to="0" class="active"></li>
           <li data-target="#carousel" data-slide-to="1"></li>
           <li data-target="#carousel" data-slide-to="2"></li>
+          <li data-target="#carousel" data-slide-to="3"></li>
+          <li data-target="#carousel" data-slide-to="4"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="static/img/carrousel1.jpg" class="d-block img-fluid" alt=”responsive image” style="margin-top: auto;">
+            <img src="static/img/carrousel/1.jpg" class="d-block img-fluid" alt=”responsive image” style="margin-top: auto;">
           </div>
           <div class="carousel-item">
-            <img src="static/img/carrousel2.jpg" class="d-block img-fluid" alt=”responsive image” style="margin-top: auto;">
+            <img src="static/img/carrousel/2.jpg" class="d-block img-fluid" alt=”responsive image” style="margin-top: auto;">
           </div>
           <div class="carousel-item">
-            <img src="static/img/carrousel3.jpg" class="d-block img-fluid" alt=”responsive image” style="margin-top: auto;">
+            <img src="static/img/carrousel/3.jpg" class="d-block img-fluid" alt=”responsive image” style="margin-top: auto;">
+          </div>
+          <div class="carousel-item">
+            <img src="static/img/carrousel/4.jpg" class="d-block img-fluid" alt=”responsive image” style="margin-top: auto;">
+          </div>
+          <div class="carousel-item">
+            <img src="static/img/carrousel/5.jpg" class="d-block img-fluid" alt=”responsive image” style="margin-top: auto;">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
@@ -95,15 +105,15 @@
                 <div class="col-md-12 col-sm-12 col-12">
                     <h4>Cuatro Vientos es una quinta familiar que se encuentra en Nono, Traslasierra, Cordoba, ubicada en Avenida Los Porteños y calle San Francisco, en dirección al museo Rocsen.</h4>
                     <h4>Está a 100 metros de dos Balnearios: Los Remansos y Vado de San Isidro, es decir a 100 metros del Rio Chico de Nono y del arroyo Los Sanjuaninos, en la zona de &quot;La Quinta&quot;.</h4>
-                    <h4>El predio cuenta con una hectárea y media de parque con una hermosa vista a las Altas Cumbres. Un lugar donde se disfruta la tranquilidad y la naturaleza.</h4>
+                    <h4>El complejo cuenta con una hectárea y media de parque con una hermosa vista a las Altas Cumbres. Un lugar donde se disfruta la tranquilidad y la naturaleza.</h4>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-12 text-center">
-                    <button class="btn btn-lg btn-info" data-toggle="modal" data-target="#predio-fotos-modal">Ver Imagenes Predio</button>
+                    <button class="btn btn-lg btn-info" data-toggle="modal" data-target="#predio-fotos-modal">Ver Imagenes del Complejo</button>
                 </div>
                 <div class="col-md-6 col-sm-6 col-12 text-center">
-                    <button class="btn btn-lg btn-info" data-toggle="modal" data-target="#rio-fotos-modal">Ver Imagenes Balnearios</button>
+                    <button class="btn btn-lg btn-info" data-toggle="modal" data-target="#rio-fotos-modal">Ver Imagenes de los Balnearios</button>
                 </div>
             </div>
         </div>
@@ -486,7 +496,7 @@
         </script>
 
                 <script>
-            var imagenes = [1,2,3,4,5,6,7,8];
+            var imagenes = [1,2,3,4,5,6,7,8,9];
             var galeria = document.getElementById('galeria-rio');
 
             for(imagen of imagenes){
