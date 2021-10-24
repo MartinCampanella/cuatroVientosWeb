@@ -1,9 +1,9 @@
 # CuatroVientosWeb
-Pagina web cuatro vientos Python + Boostrap 4 
+Pagina web cuatro vientos (Python 3 + Flask + Boostrap 4) 
 
 Para ejecutar: "python3 index.py"
 
-Para deployar: "git push heroku master"
+Para deployar: Solo hace falta pushear en master, esta automatizado en Heroku.
 
 ###Como agregar imagenes:
 (se recomienda usar https://www.reducirfotos.com/ y que no sean muy pesadas porque repercute directamente en la carga de la web)
